@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="jsgantt/jsgantt.css"/>
+    <script type="text/javascript" src="jsgantt/ganttChart.js"></script>
+    <script type="text/javascript" src="jsgantt/ganttTaskItem.js"></script>
+    <script type="text/javascript" src="jsgantt/ganttUtil.js"></script>
+    <script type="text/javascript" src="jsgantt/ganttXmlParser.js"></script>
+    <script  type="text/javascript" src="jsgantt/jsgantt.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" language="javascript">
+
+window.onload=function(){
+	
+		g =new JSGantt.GanttChart('g',document.getElementById("GanttChartDIV"), 'day');
+		g.setShowRes(0);
+		g.setShowDur(0);
+		g.setShowComp(0);
+		g.setCaptionType("Res");
+		JSGantt.parseXML("def.xml",g);
+		g.draw();
+		g.drawDependencies();
+	
+}
+</script>
+</head>
+<body>
+<div style="position:relative" class="gantt" id="GanttChartDIV"></div>
+
+</body>
+</html>

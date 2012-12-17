@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+<task>
+	<pID>10</pID>
+	<pName>Task1</pName>
+	<pStart></pStart>
+	<pEnd></pEnd>
+	<pColor>0000ff</pColor>
+	<pLink></pLink>
+	<pMile>0</pMile>
+	<pRes></pRes>
+	<pComp>0</pComp>
+	<pGroup>1</pGroup>
+	<pParent>0</pParent>
+	<pOpen>1</pOpen>
+	<pDepend/>
+</task>
+<task>
+	<pID>20</pID>
+	<pName>Task2</pName>
+	<pStart>10/11/2012</pStart>
+	<pEnd>10/15/2012</pEnd>
+	<pColor>0000ff</pColor>
+	<pLink></pLink>
+	<pMile>0</pMile>
+	<pRes>Rich</pRes>
+	<pComp>10</pComp>
+	<pGroup>0</pGroup>
+	<pParent>10</pParent>
+	<pOpen>1</pOpen>
+	<pDepend></pDepend>
+</task>
+
+
+<task>
+	<pID>30</pID>
+	<pName>Task3</pName><!--
+	<pStart>10/15/2012</pStart>
+	<pEnd>11/15/2012</pEnd>
+	--><pColor>0000ff</pColor>
+	<pLink></pLink>
+	<pMile>0</pMile>
+	<pRes>Rich</pRes>
+	<pComp>10</pComp>
+	<pGroup>0</pGroup>
+	<pParent>10</pParent>
+	<pOpen>1</pOpen>
+	
+	<children>
+	
+	<child>
+	<pStart>10/19/2012</pStart>
+	<pEnd>10/25/2012</pEnd>
+	<pComp>10</pComp>
+	<pColor>aaaaff</pColor>
+	</child>
+	
+	<child>
+	<pStart>10/27/2012</pStart>
+	<pEnd>10/28/2012</pEnd>
+	<pComp>10</pComp>
+	<pColor>aaddff</pColor>
+	</child>
+	
+	<child>
+	<pStart>10/30/2012</pStart>
+	<pEnd>11/5/2012</pEnd>
+	<pComp>10</pComp>
+	<pColor>bb00ff</pColor>
+	</child>
+	
+	<child>
+	<pStart>11/8/2012</pStart>
+	<pEnd>11/20/2012</pEnd>
+	<pComp>60</pComp>
+	<pColor>00eeff</pColor>
+	</child>
+	
+	</children>
+	
+	<pDepend></pDepend>
+</task>
+
+<task>
+	<pID>40</pID>
+	<pName>Task4</pName>
+	<pStart>11/22/2012</pStart>
+	<pEnd>12/5/2012</pEnd>
+	<pColor>0000ff</pColor>
+	<pLink></pLink>
+	<pMile>0</pMile>
+	<pRes>Mal</pRes>
+	<pComp>50</pComp>
+	<pGroup>0</pGroup>
+	<pParent>10</pParent>
+	<pOpen>1</pOpen>
+	<pDepend>20,30</pDepend>
+</task>
+</project>

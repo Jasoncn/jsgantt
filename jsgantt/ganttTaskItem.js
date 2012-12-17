@@ -49,7 +49,7 @@
 
 
 
-        var vID, vName ,vColor,vLink,vMile,vRes, vComp, vParent, vGroup,vOpen,vDepend ,vCaption , vDuration, vCritical, vSequenceList;
+        var vID, vName ,vColor,vLink,vMile,vRes, vComp, vParent, vGroup,vOpen,vDepend ,vCaption , vDuration, vCritical, vSequenceList=[];
         var vStart;// = new Date();
         var vEnd ;//  = new Date();
 
@@ -61,6 +61,16 @@
       if(jsonObj.pDuration!=undefined){
              vDuration = jsonObj.pDuration;
        }
+
+        if(jsonObj.pSequenceList!=undefined){
+
+            var arr=pSequenceList;
+            for(var i=0;i<arr.length;i++){
+                vSequenceList.push(new   JSGantt.TaskItem(arr[i]) );
+            }
+
+
+        }
 
 
       if(jsonObj.pCritical!=undefined){
